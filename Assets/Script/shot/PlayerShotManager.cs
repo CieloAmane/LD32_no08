@@ -57,10 +57,13 @@ public class PlayerShotManager : MonoBehaviour {
                 {
                     if (cnt % 20 == 0)
                     {
-                        bulletPosition = shotMuzzel.transform.position + new Vector3(-0.5f, 0.0f, 0.0f);
+                        bulletPosition = shotMuzzel.transform.position + new Vector3(-1.5f, 0.0f, 0.0f);
                         Instantiate(buleet, bulletPosition, q);
 
-                        bulletPosition = shotMuzzel.transform.position + new Vector3(0.5f, 0.0f, 0.0f);
+                        bulletPosition = shotMuzzel.transform.position + new Vector3(0.0f, 0.0f, 0.0f);
+                        Instantiate(buleet, bulletPosition, q);
+
+                        bulletPosition = shotMuzzel.transform.position + new Vector3(1.5f, 0.0f, 0.0f);
                         Instantiate(buleet, bulletPosition, q);
                         firingCnt++;
                     }

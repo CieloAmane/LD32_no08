@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{988E7FA6-5B89-4A85-645E-3CB704181DFB}</ProjectGuid>
+    <ProjectGuid>{E35E975F-9882-2F49-E337-F6E239D0B7B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,11 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\CharacterMove.cs" />
-     <Compile Include="Assets\Script\CreateEnemyPaty1.cs" />
-     <Compile Include="Assets\Script\EnemyManager.cs" />
-     <Compile Include="Assets\Script\PlayerShotManager.cs" />
-     <Compile Include="Assets\Script\ShotMove.cs" />
+     <Compile Include="Assets\Script\Player\CharacterMove.cs" />
+     <Compile Include="Assets\Script\Stage\CreateEnemyPaty.cs" />
+     <Compile Include="Assets\Script\Stage\CreateStage.cs" />
+     <Compile Include="Assets\Script\Stage\DestroyStage.cs" />
+     <Compile Include="Assets\Script\Stage\StageMove.cs" />
+     <Compile Include="Assets\Script\UI\DistanceDisplay.cs" />
+     <Compile Include="Assets\Script\enemy\CreateEnemyPaty1.cs" />
+     <Compile Include="Assets\Script\enemy\EnemyDelete.cs" />
+     <Compile Include="Assets\Script\enemy\EnemyManager.cs" />
+     <Compile Include="Assets\Script\enemy\EnemyMove.cs" />
+     <Compile Include="Assets\Script\shot\PlayerShotManager.cs" />
+     <Compile Include="Assets\Script\shot\ShotDelete.cs" />
+     <Compile Include="Assets\Script\shot\ShotMove.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -88,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{96CDA520-2D48-EC11-1B1D-063F9945DD67}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{CE866507-039D-9154-7E7E-FD13325A7752}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

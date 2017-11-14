@@ -5,13 +5,17 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour {
 
     public float speed = 10.0f;
-	// Use this for initialization
+    public float autoMoveSpeed = 15.0f;
+    // Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        //常に動いている。
+        transform.position += transform.forward * autoMoveSpeed * Time.deltaTime;
+
         if (Input.GetKey("right"))
         {
             transform.position += transform.forward * speed * Time.deltaTime;
